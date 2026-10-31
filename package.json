@@ -1,0 +1,20 @@
+{
+  "name": "schooltest",
+  "version": "1.0.0",
+  "description": "小學生各科測驗題庫與考卷系統",
+  "type": "module",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "open": "(sleep 1 && open http://localhost:3000) & npm start",
+    "dev": "node --watch server/index.js"
+  },
+  "dependencies": {
+    "@google/genai": "^1.0.0",
+    "@libsql/client": "^0.15.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "multer": "^2.5.0",
+    "pg": "^8.23.1"
+  }
+}

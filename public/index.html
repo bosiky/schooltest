@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>小學測驗小幫手</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <header class="topbar no-print">
+    <a class="brand" href="#/">📚 小學測驗小幫手</a>
+    <nav id="nav">
+      <a href="#/">首頁</a>
+      <a href="#/upload">上傳題目</a>
+      <a href="#/bank">題庫</a>
+      <a href="#/new">出考卷</a>
+      <a href="#/history">考試紀錄</a>
+      <a href="#/wrong">錯題本</a>
+    </nav>
+    <div class="student-picker">
+      <span>👦 學生：</span>
+      <select id="studentSelect"></select>
+    </div>
+  </header>
+  <main id="app"></main>
+  <div id="toast" class="toast"></div>
+  <div id="modal" class="modal hidden"><div class="modal-box" id="modalBox"></div></div>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>
